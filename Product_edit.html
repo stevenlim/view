@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+   
+  <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+   <link href="css/theme.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+<!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">POS</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="Transaction.html">Transaction</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Product<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="Product_new.html">New Product</a></li>
+                <li><a href="Product.html">View Product</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Category<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="Category_new.html">New Category</a></li>
+                <li><a href="Category.html">View Category</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Stock<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="Insert_stock.html">Insert Stock</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="page-header">
+        <h1> Product edit</h1>
+      </div>
+        
+      <div class="row">
+          <div class="col-md-12">
+              <form class="form-horizontal" role="form" action ="Product_view.html">
+                    <div class="form-group">
+                      <label for="name" class="col-lg-2 control-label">Name</label>
+                      <div class="col-lg-10">
+                        <input type="text" class="form-control" id="name" placeholder="Name" value="derjbknj">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="price" class="col-lg-2 control-label">Price</label>
+                      <div class="col-lg-10">
+                        <input type="number" class="form-control" id="price" placeholder="Price" value="100000">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="quantity" class="col-lg-2 control-label">Quantity</label>
+                      <div class="col-lg-10">
+                        <input type="number" class="form-control" id="quantity" placeholder="Quantity" value="45">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="category" class="col-lg-2 control-label">Category</label>
+                      <div class="col-lg-10">
+                        <input type="text" class="form-control" id="category" placeholder="Category" value="Baju">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="information" class="col-lg-2 control-label">Information</label>
+                      <div class="col-lg-10">
+                        <input type="text" class="form-control" id="information" placeholder="Information" value="blabla">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-lg-offset-2 col-lg-10">
+                        <button type="submit" class="btn btn-default" >Save</button>
+                        <button type="reset" class="btn btn-default">cancel</button>
+                      </div>
+                    </div>
+              </form>
+          </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
